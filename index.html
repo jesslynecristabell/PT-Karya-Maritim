@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title-[#0F172A]>PT Karya Maritim & PT Karya Maritim Dirgantara | Logistik & Perikanan</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1E293B',
+                            900: '#0F172A',
+                            950: '#070C18',
+                        },
+                        cyan: {
+                            400: '#22D3EE',
+                            500: '#06B6D4',
+                            600: '#0891B2',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Swiss Grid Crisp Border Aesthetic */
+        .swiss-border {
+            border-color: rgba(226, 232, 240, 0.8);
+        }
+        .swiss-border-dark {
+            border-color: rgba(51, 65, 85, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans selection:bg-cyan-500 selection:text-white">
+
+    <!-- 1. STICKY HEADER & NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-navy-900/95 backdrop-blur-md border-b border-slate-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 bg-cyan-500 flex items-center justify-center font-bold text-lg text-navy-950 rounded-sm shadow-md transition-transform group-hover:scale-105">
+                    KM
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold tracking-tight text-sm sm:text-base leading-none text-white">
+                        PT KARYA MARITIM
+                    </span>
+                    <span class="text-[10px] text-cyan-400 tracking-wider font-semibold uppercase mt-1">
+                        & PT KARYA MARITIM DIRGANTARA
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-8 text-xs font-semibold uppercase tracking-wider text-slate-300">
+                <a href="#tentang" class="hover:text-cyan-400 transition-colors">Profil Korporat</a>
+                <a href="#layanan" class="hover:text-cyan-400 transition-colors">Pilar Bisnis</a>
+                <a href="#katalog" class="hover:text-cyan-400 transition-colors">Produk Ikan</a>
+                <a href="#alur" class="hover:text-cyan-400 transition-colors">Alur Operasional</a>
+                <a href="#kalkulator" class="hover:text-cyan-400 transition-colors">Simulasi Biaya</a>
+                <a href="#kontak" class="hover:text-cyan-400 transition-colors">Lokasi & Kontak</a>
+            </nav>
+
+            <!-- CTA Header Button -->
+            <div class="hidden sm:flex items-center">
+                <a href="#kalkulator" class="px-5 py-2.5 bg-cyan-500 hover:bg-cyan-600 text-navy-950 font-bold text-xs uppercase tracking-wider rounded-sm transition-all flex items-center gap-2 shadow-lg shadow-cyan-950/40">
+                    <i class="fa-solid fa-calculator"></i>
+                    Simulasi Penawaran
+                </a>
+            </div>
+
+            <!-- Mobile Menu Trigger -->
+            <button id="menu-btn" class="lg:hidden p-2 text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-navy-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3 text-sm">
+            <a href="#tentang" class="mobile-link block py-2 text-slate-300 hover:text-cyan-400 font-medium">Profil Korporat</a>
+            <a href="#layanan" class="mobile-link block py-2 text-slate-300 hover:text-cyan-400 font-medium">Pilar Bisnis</a>
+            <a href="#katalog" class="mobile-link block py-2 text-slate-300 hover:text-cyan-400 font-medium">Produk Ikan</a>
+            <a href="#alur" class="mobile-link block py-2 text-slate-300 hover:text-cyan-400 font-medium">Alur Operasional</a>
+            <a href="#kalkulator" class="mobile-link block py-2 text-slate-300 hover:text-cyan-400 font-medium">Simulasi Biaya</a>
+            <a href="#kontak" class="mobile-link block py-2 text-slate-300 hover:text-cyan-400 font-medium">Lokasi & Kontak</a>
+            <div class="pt-2">
+                <a href="#kalkulator" class="mobile-link block w-full text-center py-2.5 bg-cyan-500 text-navy-950 font-bold text-xs uppercase tracking-wider rounded-sm">
+                    Simulasi Penawaran
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section class="relative bg-navy-900 text-white overflow-hidden border-b border-slate-800">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#06B6D4_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Hero Content -->
+            <div class="lg:col-span-7 space-y-8 z-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-navy-800 border border-cyan-500/30 text-cyan-300 text-xs font-mono rounded-full uppercase tracking-widest">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    Cengkareng Timur, Jakarta Barat
+                </div>
+
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight uppercase">
+                    Integrasi Logistik Maritim & Perdagangan Hasil Laut Segar
+                </h1>
+
+                <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl font-normal">
+                    PT Karya Maritim dan PT Karya Maritim Dirgantara mengelola kegiatan logistik terpadu, penanganan administrasi operasional ekspor impor, serta pengolahan dan distribusi produk perikanan mutu tinggi secara efisien dan terorganisasi.
+                </p>
+
+                <!-- Hero Action Buttons -->
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                    <a href="#katalog" class="px-7 py-3.5 bg-cyan-500 hover:bg-cyan-600 text-navy-950 font-bold text-sm uppercase tracking-wider rounded-sm transition-all text-center flex items-center justify-center gap-2 shadow-xl shadow-cyan-950/50">
+                        Katalog Ikan Segar & Beku
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <a href="#layanan" class="px-7 py-3.5 bg-navy-800 hover:bg-slate-800 text-slate-100 font-bold text-sm uppercase tracking-wider rounded-sm border border-slate-700 transition-all text-center flex items-center justify-center gap-2">
+                        Layanan Logistik & Ekspor
+                    </a>
+                </div>
+
+                <!-- Metrics Grid -->
+                <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800">
+                    <div>
+                        <div class="text-2xl lg:text-3xl font-extrabold text-cyan-400 font-mono">100%</div>
+                        <div class="text-[11px] text-slate-400 mt-1 uppercase font-semibold">Standar Mutu HACCP</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl lg:text-3xl font-extrabold text-white font-mono">2</div>
+                        <div class="text-[11px] text-slate-400 mt-1 uppercase font-semibold">Entitas Bisnis Terpadu</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl lg:text-3xl font-extrabold text-cyan-400 font-mono">JAKBAR</div>
+                        <div class="text-[11px] text-slate-400 mt-1 uppercase font-semibold">Pusat Hub Operasional</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Visual Image -->
+            <div class="lg:col-span-5 relative">
+                <div class="relative rounded-sm overflow-hidden border-2 border-slate-700 bg-navy-950 shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&q=80&w=1000" alt="Logistik Laut dan Kapal Freight" class="w-full h-[420px] object-cover filter brightness-90 hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent opacity-80"></div>
+                    
+                    <div class="absolute bottom-4 left-4 right-4 bg-navy-900/90 p-4 border border-slate-700 rounded-sm backdrop-blur-sm">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2.5 bg-cyan-500 rounded-sm text-navy-950">
+                                <i class="fa-solid fa-ship text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-white">Distribusi & Administrasi Operasional</h4>
+                                <p class="text-[11px] text-slate-400 mt-0.5">Mendukung kelancaran arus barang lokal dan pasar internasional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 3. ABOUT & CORPORATE PROFILE -->
+    <section id="tentang" class="py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-slate-200">
+                <div>
+                    <span class="text-xs font-mono text-cyan-600 font-bold uppercase tracking-widest block mb-2">
+                        02 // Profil Perusahaan
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 uppercase tracking-tight">
+                        Dua Perusahaan, Satu Komitmen Operasional
+                    </h2>
+                </div>
+                <p class="text-sm text-slate-600 max-w-md mt-4 md:mt-0 leading-relaxed">
+                    Berlokasi strategis di Cengkareng Timur, Jakarta Barat, kami menyatukan manajemen logistik dengan perdagangan hasil laut segar dan pembekuan.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Card Entity 1 -->
+                <div class="bg-slate-50 border border-slate-200 p-8 rounded-sm hover:border-cyan-500 transition-all relative group">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-cyan-500"></div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <i class="fa-solid fa-building text-2xl text-cyan-600"></i>
+                        <h3 class="text-xl font-bold text-slate-900 uppercase tracking-wide">PT Karya Maritim</h3>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Menjalankan kegiatan di bidang pengolahan serta perdagangan komoditas hasil laut. Berfokus pada penyediaan ikan segar dan produk perikanan beku standar mutu ekspor dan pasar lokal.
+                    </p>
+                    <ul class="space-y-3 text-xs font-semibold uppercase text-slate-700">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-cyan-600"></i>
+                            Perdagangan Ikan Segar & Produk Perikanan Beku
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-cyan-600"></i>
+                            Pengolahan Mutu Hasil Tangkapan Laut
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-cyan-600"></i>
+                            Pasokan Pasar Lokal dan Ekspor
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card Entity 2 -->
+                <div class="bg-slate-50 border border-slate-200 p-8 rounded-sm hover:border-navy-800 transition-all relative group">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-navy-800"></div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <i class="fa-solid fa-plane-departure text-2xl text-navy-800"></i>
+                        <h3 class="text-xl font-bold text-slate-900 uppercase tracking-wide">PT Karya Maritim Dirgantara</h3>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Fokus pada pengelolaan aktivitas logistik terpadu, administrasi operasional ekspor dan impor, serta koordinasi kelancaran arus barang usaha secara efektif dan terorganisasi.
+                    </p>
+                    <ul class="space-y-3 text-xs font-semibold uppercase text-slate-700">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-slate-800"></i>
+                            Pengelolaan Logistik Ekspor & Impor
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-slate-800"></i>
+                            Administrasi Operasional Bisnis Terpadu
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-slate-800"></i>
+                            Dukungan Distribusi Barang Nasional
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. KEY BUSINESS VERTICALS -->
+    <section id="layanan" class="py-20 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="mb-12">
+                <span class="text-xs font-mono text-cyan-600 font-bold uppercase tracking-widest block mb-2">
+                    03 // Layanan Utama
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 uppercase tracking-tight">
+                    Bidang Usaha & Layanan Operasional
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Vertical 1 -->
+                <div class="bg-white border border-slate-200 p-8 rounded-sm hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-navy-900 text-cyan-400 flex items-center justify-center text-xl rounded-sm mb-6">
+                            <i class="fa-solid fa-boxes-packing"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3 uppercase">Logistik & Freight Shipping</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-6">
+                            Pengelolaan alur distribusi komoditas darat dan laut dari fasilitas Cengkareng Timur menuju titik pelabuhan dan penerima secara efisien.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-mono">
+                        <span>Fokus Utama</span>
+                        <span class="font-bold text-slate-800">Lokal & Antar Pulau</span>
+                    </div>
+                </div>
+
+                <!-- Vertical 2 -->
+                <div class="bg-white border border-slate-200 p-8 rounded-sm hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-navy-900 text-cyan-400 flex items-center justify-center text-xl rounded-sm mb-6">
+                            <i class="fa-solid fa-fish text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3 uppercase">Pengolahan & Produk Perikanan</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-6">
+                            Pembersihan, seleksi mutu (grading), serta teknik pembekuan cepat untuk mempertahankan kestabilan nutrisi dan kesegaran ikan tangkapan laut.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-mono">
+                        <span>Fokus Utama</span>
+                        <span class="font-bold text-slate-800">Segar & Pembekuan</span>
+                    </div>
+                </div>
+
+                <!-- Vertical 3 -->
+                <div class="bg-white border border-slate-200 p-8 rounded-sm hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-navy-900 text-cyan-400 flex items-center justify-center text-xl rounded-sm mb-6">
+                            <i class="fa-solid fa-file-contract"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3 uppercase">Administrasi Ekspor & Impor</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-6">
+                            Kelengkapan penanganan dokumen legalitas perizinan, sertifikasi karantina perikanan, serta pengelolaan kepabeanan secara cepat.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-mono">
+                        <span>Fokus Utama</span>
+                        <span class="font-bold text-slate-800">Legalitas & Custom Clearance</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. INTERACTIVE SEAFOOD CATALOG & PRODUCT SHOWCASE -->
+    <section id="katalog" class="py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+                <div>
+                    <span class="text-xs font-mono text-cyan-600 font-bold uppercase tracking-widest block mb-2">
+                        04 // Komoditas Perikanan
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 uppercase tracking-tight">
+                        Katalog Ikan Segar & Pembekuan Beku
+                    </h2>
+                </div>
+                
+                <!-- Filter Buttons -->
+                <div class="mt-6 md:mt-0 flex flex-wrap gap-2 bg-slate-100 p-1.5 rounded-sm border border-slate-200">
+                    <button onclick="filterCatalog('all')" id="btn-all" class="catalog-btn px-4 py-1.5 text-xs font-bold uppercase tracking-wider rounded-sm transition-all bg-navy-900 text-white">
+                        Semua Produk
+                    </button>
+                    <button onclick="filterCatalog('segar')" id="btn-segar" class="catalog-btn px-4 py-1.5 text-xs font-bold uppercase tracking-wider rounded-sm transition-all text-slate-600 hover:text-slate-900">
+                        Ikan Segar
+                    </button>
+                    <button onclick="filterCatalog('beku')" id="btn-beku" class="catalog-btn px-4 py-1.5 text-xs font-bold uppercase tracking-wider rounded-sm transition-all text-slate-600 hover:text-slate-900">
+                        Produk Beku
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Cards Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="catalog-grid">
+                
+                <!-- Item 1 -->
+                <div class="product-card catalog-item segar bg-slate-50 border border-slate-200 rounded-sm overflow-hidden flex flex-col justify-between hover:border-slate-400 transition-all">
+                    <div>
+                        <div class="relative h-48 overflow-hidden bg-slate-200">
+                            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=800" alt="Tuna Yellowfin" class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 bg-navy-900/90 text-white text-[10px] font-mono px-2.5 py-1 rounded-sm uppercase">Ikan Segar</span>
+                            <span class="absolute top-3 right-3 bg-cyan-900/90 text-cyan-200 border border-cyan-500/30 text-[10px] font-mono px-2.5 py-1 rounded-sm">0°C s/d 2°C</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-base font-bold text-slate-900 mb-2">Tuna Yellowfin Utuh & Loins</h3>
+                            <div class="space-y-2 text-xs text-slate-600 mt-4 border-t border-slate-200 pt-4">
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Mutu Standard:</span>
+                                    <span class="font-semibold text-slate-800">Grade A / Export Quality</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Asal Tangkapan:</span>
+                                    <span class="font-semibold text-slate-800">Samudra Hindia</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Kemasan:</span>
+                                    <span class="font-semibold text-slate-800">Insulated Box + Ice</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#kontak" class="w-full py-2 bg-slate-200 hover:bg-cyan-600 hover:text-white text-slate-700 text-xs font-bold uppercase tracking-wider rounded-sm transition-colors text-center block">
+                            Minta Spesifikasi
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="product-card catalog-item beku bg-slate-50 border border-slate-200 rounded-sm overflow-hidden flex flex-col justify-between hover:border-slate-400 transition-all">
+                    <div>
+                        <div class="relative h-48 overflow-hidden bg-slate-200">
+                            <img src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&q=80&w=800" alt="Udang Vaname" class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 bg-navy-900/90 text-white text-[10px] font-mono px-2.5 py-1 rounded-sm uppercase">Produk Beku</span>
+                            <span class="absolute top-3 right-3 bg-cyan-900/90 text-cyan-200 border border-cyan-500/30 text-[10px] font-mono px-2.5 py-1 rounded-sm">-25°C IQF</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-base font-bold text-slate-900 mb-2">Udang Vaname Beku (IQF)</h3>
+                            <div class="space-y-2 text-xs text-slate-600 mt-4 border-t border-slate-200 pt-4">
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Mutu Standard:</span>
+                                    <span class="font-semibold text-slate-800">Headless / PDTO</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Asal Tangkapan:</span>
+                                    <span class="font-semibold text-slate-800">Tambak Terkontrol</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Kemasan:</span>
+                                    <span class="font-semibold text-slate-800">Master Carton 10kg</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#kontak" class="w-full py-2 bg-slate-200 hover:bg-cyan-600 hover:text-white text-slate-700 text-xs font-bold uppercase tracking-wider rounded-sm transition-colors text-center block">
+                            Minta Spesifikasi
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="product-card catalog-item segar bg-slate-50 border border-slate-200 rounded-sm overflow-hidden flex flex-col justify-between hover:border-slate-400 transition-all">
+                    <div>
+                        <div class="relative h-48 overflow-hidden bg-slate-200">
+                            <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&q=80&w=800" alt="Cumi-Cumi Segar" class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 bg-navy-900/90 text-white text-[10px] font-mono px-2.5 py-1 rounded-sm uppercase">Ikan Segar</span>
+                            <span class="absolute top-3 right-3 bg-cyan-900/90 text-cyan-200 border border-cyan-500/30 text-[10px] font-mono px-2.5 py-1 rounded-sm">0°C s/d 3°C</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-base font-bold text-slate-900 mb-2">Cumi-Cumi Segar Tangkapan</h3>
+                            <div class="space-y-2 text-xs text-slate-600 mt-4 border-t border-slate-200 pt-4">
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Mutu Standard:</span>
+                                    <span class="font-semibold text-slate-800">Whole Cleaned</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Asal Tangkapan:</span>
+                                    <span class="font-semibold text-slate-800">Laut Jawa & Maluku</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Kemasan:</span>
+                                    <span class="font-semibold text-slate-800">Styrofoam Box Ice</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#kontak" class="w-full py-2 bg-slate-200 hover:bg-cyan-600 hover:text-white text-slate-700 text-xs font-bold uppercase tracking-wider rounded-sm transition-colors text-center block">
+                            Minta Spesifikasi
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="product-card catalog-item beku bg-slate-50 border border-slate-200 rounded-sm overflow-hidden flex flex-col justify-between hover:border-slate-400 transition-all">
+                    <div>
+                        <div class="relative h-48 overflow-hidden bg-slate-200">
+                            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&q=80&w=800" alt="Kakap Merah Fillet" class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 bg-navy-900/90 text-white text-[10px] font-mono px-2.5 py-1 rounded-sm uppercase">Produk Beku</span>
+                            <span class="absolute top-3 right-3 bg-cyan-900/90 text-cyan-200 border border-cyan-500/30 text-[10px] font-mono px-2.5 py-1 rounded-sm">-20°C Cold</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-base font-bold text-slate-900 mb-2">Fillet Kakap Merah Beku</h3>
+                            <div class="space-y-2 text-xs text-slate-600 mt-4 border-t border-slate-200 pt-4">
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Mutu Standard:</span>
+                                    <span class="font-semibold text-slate-800">Skin-on Pin-bone Out</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Asal Tangkapan:</span>
+                                    <span class="font-semibold text-slate-800">Kepulauan Riau</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Kemasan:</span>
+                                    <span class="font-semibold text-slate-800">Individual Polybag Box</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#kontak" class="w-full py-2 bg-slate-200 hover:bg-cyan-600 hover:text-white text-slate-700 text-xs font-bold uppercase tracking-wider rounded-sm transition-colors text-center block">
+                            Minta Spesifikasi
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="product-card catalog-item segar bg-slate-50 border border-slate-200 rounded-sm overflow-hidden flex flex-col justify-between hover:border-slate-400 transition-all">
+                    <div>
+                        <div class="relative h-48 overflow-hidden bg-slate-200">
+                            <img src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?auto=format&fit=crop&q=80&w=800" alt="Ikan Tenggiri" class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 bg-navy-900/90 text-white text-[10px] font-mono px-2.5 py-1 rounded-sm uppercase">Ikan Segar</span>
+                            <span class="absolute top-3 right-3 bg-cyan-900/90 text-cyan-200 border border-cyan-500/30 text-[10px] font-mono px-2.5 py-1 rounded-sm">1°C Chill</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-base font-bold text-slate-900 mb-2">Ikan Tenggiri Segar Utuh</h3>
+                            <div class="space-y-2 text-xs text-slate-600 mt-4 border-t border-slate-200 pt-4">
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Mutu Standard:</span>
+                                    <span class="font-semibold text-slate-800">Grade Super Industri</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Asal Tangkapan:</span>
+                                    <span class="font-semibold text-slate-800">Laut Natuna</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Kemasan:</span>
+                                    <span class="font-semibold text-slate-800">Air-Freight Ready Box</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#kontak" class="w-full py-2 bg-slate-200 hover:bg-cyan-600 hover:text-white text-slate-700 text-xs font-bold uppercase tracking-wider rounded-sm transition-colors text-center block">
+                            Minta Spesifikasi
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="product-card catalog-item beku bg-slate-50 border border-slate-200 rounded-sm overflow-hidden flex flex-col justify-between hover:border-slate-400 transition-all">
+                    <div>
+                        <div class="relative h-48 overflow-hidden bg-slate-200">
+                            <img src="https://images.unsplash.com/photo-1545247181-516773cae754?auto=format&fit=crop&q=80&w=800" alt="Gurita Beku" class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 bg-navy-900/90 text-white text-[10px] font-mono px-2.5 py-1 rounded-sm uppercase">Produk Beku</span>
+                            <span class="absolute top-3 right-3 bg-cyan-900/90 text-cyan-200 border border-cyan-500/30 text-[10px] font-mono px-2.5 py-1 rounded-sm">-25°C Frozen</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-base font-bold text-slate-900 mb-2">Gurita Beku (Frozen Octopus)</h3>
+                            <div class="space-y-2 text-xs text-slate-600 mt-4 border-t border-slate-200 pt-4">
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Mutu Standard:</span>
+                                    <span class="font-semibold text-slate-800">Flower Shaped / Tendered</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Asal Tangkapan:</span>
+                                    <span class="font-semibold text-slate-800">Perairan Sulawesi</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Kemasan:</span>
+                                    <span class="font-semibold text-slate-800">Block Frozen 10kg</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#kontak" class="w-full py-2 bg-slate-200 hover:bg-cyan-600 hover:text-white text-slate-700 text-xs font-bold uppercase tracking-wider rounded-sm transition-colors text-center block">
+                            Minta Spesifikasi
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. INTERACTIVE COLD CHAIN & SHIPPING ESTIMATOR CALCULATOR -->
+    <section id="kalkulator" class="py-20 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Info Section -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs font-mono text-cyan-600 font-bold uppercase tracking-widest block">
+                        05 // Simulasi Biaya
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 uppercase tracking-tight">
+                        Kalkulator Simulasi Logistik Cold Chain
+                    </h2>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Perkirakan estimasi biaya penanganan komoditas perikanan dan logistik terpadu secara langsung berdasarkan bobot, kebutuhan suhu, dan cakupan wilayah.
+                    </p>
+                    
+                    <div class="bg-white border border-slate-200 p-6 rounded-sm space-y-3 text-xs text-slate-600">
+                        <div class="flex items-center gap-2 text-slate-900 font-bold">
+                            <i class="fa-solid fa-shield-halved text-cyan-600"></i>
+                            Catatan Perhitungan Biaya
+                        </div>
+                        <p>Kalkulasi ini merupakan simulasi estimasi operasional dasar. Angka pasti disesuaikan dengan volume riil dan kelengkapan dokumen Bea Cukai.</p>
+                    </div>
+                </div>
+
+                <!-- Calculator Form -->
+                <div class="lg:col-span-7 bg-white border border-slate-300 p-8 rounded-sm">
+                    <div class="grid sm:grid-cols-2 gap-6 mb-6">
+                        
+                        <!-- Service Type -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-2">Jenis Penanganan Usaha</label>
+                            <select id="calc-service" onchange="calculateEstimate()" class="w-full bg-slate-50 border border-slate-300 p-2.5 text-xs rounded-sm focus:outline-none focus:border-cyan-600">
+                                <option value="seafood">Komoditas Perikanan (Segar/Beku)</option>
+                                <option value="logistics">Logistik & Administrasi Freight</option>
+                            </select>
+                        </div>
+
+                        <!-- Scope Destination -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-2">Cakupan Wilayah</label>
+                            <select id="calc-[#0F172A]" onchange="calculateEstimate()" class="w-full bg-slate-50 border border-slate-300 p-2.5 text-xs rounded-sm focus:outline-none focus:border-cyan-600">
+                                <option value="domestik">Domestik / Antar Kota</option>
+                                <option value="ekspor">Mancanegara / Ekspor</option>
+                            </select>
+                        </div>
+
+                        <!-- Weight Slider -->
+                        <div class="sm:col-span-2">
+                            <div class="flex justify-between text-xs font-bold uppercase text-slate-700 mb-2">
+                                <span>Perkiraan Berat Total</span>
+                                <span id="weight-display" class="text-cyan-600 font-mono text-sm">500 KG</span>
+                            </div>
+                            <input type="range" id="calc-weight" min="100" max="5000" step="100" value="500" oninput="calculateEstimate()" class="w-full accent-cyan-600 cursor-pointer">
+                            <div class="flex justify-between text-[10px] text-slate-400 font-mono mt-1">
+                                <span>100 KG</span>
+                                <span>2.500 KG</span>
+                                <span>5.000 KG</span>
+                            </div>
+                        </div>
+
+                        <!-- Temperature Selector -->
+                        <div class="sm:col-span-2">
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-2">Kebutuhan Kontrol Suhu</label>
+                            <div class="grid grid-cols-3 gap-3">
+                                <button type="button" onclick="setTemp('chilled')" id="temp-chilled" class="temp-btn py-2 px-3 text-xs border rounded-sm font-semibold transition-colors bg-white text-slate-700 border-slate-300">
+                                    Chilled (0°C to 4°C)
+                                </button>
+                                <button type="button" onclick="setTemp('frozen')" id="temp-frozen" class="temp-btn py-2 px-3 text-xs border rounded-sm font-semibold transition-colors bg-navy-900 text-white border-navy-900">
+                                    Frozen (-20°C)
+                                </button>
+                                <button type="button" onclick="setTemp('ultra')" id="temp-ultra" class="temp-btn py-2 px-3 text-xs border rounded-sm font-semibold transition-colors bg-white text-slate-700 border-slate-300">
+                                    Deep Cold (-40°C)
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Dynamic Output Result -->
+                    <div class="bg-navy-900 p-6 rounded-sm text-white flex flex-col sm:flex-row items-center justify-between gap-4 border border-slate-800">
+                        <div>
+                            <span class="text-[10px] font-mono text-cyan-400 uppercase tracking-widest block">Perkiraan Biaya Penanganan:</span>
+                            <div id="estimate-result" class="text-2xl font-extrabold font-mono text-white mt-1">
+                                Rp 7.750.000
+                            </div>
+                        </div>
+                        <a href="#kontak" class="px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-navy-950 font-bold text-xs uppercase tracking-wider rounded-sm transition-colors text-center whitespace-nowrap">
+                            Kirim Permintaan Resmi
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. OPERATIONAL WORKFLOW & QUALITY TIMELINE -->
+    <section id="alur" class="py-20 bg-navy-900 text-white border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+            <div class="mb-14">
+                <span class="text-xs font-mono text-cyan-400 font-bold uppercase tracking-widest block mb-2">
+                    06 // Metodologi Kerja
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-bold uppercase tracking-tight text-white">
+                    Alur Operasional & Manajemen Mutu
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Step 1 -->
+                <div class="bg-navy-800/40 border border-slate-700 p-6 rounded-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-3xl font-extrabold text-cyan-400 font-mono">01</span>
+                            <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+                        </div>
+                        <h3 class="text-base font-bold text-white mb-3 uppercase">Penerimaan & Seleksi</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                            Pemeriksaan awal fisik organoleptik, uji kesegaran, serta klasifikasi ukuran produk perikanan secara rinci.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-700 text-[11px] text-slate-400">
+                        <strong class="text-cyan-300 block mb-1">Standar QC:</strong>
+                        Uji laboratorium awal & grading ketat.
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-navy-800/40 border border-slate-700 p-6 rounded-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-3xl font-extrabold text-cyan-400 font-mono">02</span>
+                            <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+                        </div>
+                        <h3 class="text-base font-bold text-white mb-3 uppercase">Pengolahan & Pembekuan</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                            Proses higienisasi, pemotongan presisi, dan penanganan suhu stabil (Cold Treatment/IQF) untuk menjamin kesegaran.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-700 text-[11px] text-slate-400">
+                        <strong class="text-cyan-300 block mb-1">Standar QC:</strong>
+                        Ruang bersih suhu terkontrol konstan.
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-navy-800/40 border border-slate-700 p-6 rounded-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-3xl font-extrabold text-cyan-400 font-mono">03</span>
+                            <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+                        </div>
+                        <h3 class="text-base font-bold text-white mb-3 uppercase">Dokumentasi Legalitas</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                            Pengurusan sertifikasi karantina perikanan, kelengkapan administrasi ekspor impor, serta izin kepabeanan.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-700 text-[11px] text-slate-400">
+                        <strong class="text-cyan-300 block mb-1">Standar QC:</strong>
+                        Kepatuhan penuh hukum Bea Cukai.
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-navy-800/40 border border-slate-700 p-6 rounded-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-3xl font-extrabold text-cyan-400 font-mono">04</span>
+                            <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+                        </div>
+                        <h3 class="text-base font-bold text-white mb-3 uppercase">Distribusi Cold Chain</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                            Pengangkutan aman menggunakan armada berpendingin khusus menuju titik pengiriman target tepat waktu.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-700 text-[11px] text-slate-400">
+                        <strong class="text-cyan-300 block mb-1">Standar QC:</strong>
+                        Pemantauan pemetaaan suhu konstan.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 8. EXPORT STANDARDS & GLOBAL CERTIFICATION GRID -->
+    <section class="py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="mb-12 text-center max-w-2xl mx-auto">
+                <span class="text-xs font-mono text-cyan-600 font-bold uppercase tracking-widest block mb-2">
+                    07 // Kepatuhan Legalitas
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 uppercase tracking-tight">
+                    Standardisasi Pengolahan & Kelayakan Ekspor
+                </h2>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Cert 1 -->
+                <div class="bg-slate-50 border border-slate-200 p-6 rounded-sm hover:border-cyan-500 transition-colors">
+                    <div class="w-12 h-12 bg-white border border-slate-300 text-cyan-600 font-mono font-bold text-sm flex items-center justify-center rounded-sm mb-4">
+                        HACCP
+                    </div>
+                    <h3 class="text-sm font-bold text-slate-900 mb-2">Hazard Analysis Critical Control Point</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Penanganan komoditas bebas dari risiko bahaya biologi dan kimia.</p>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="bg-slate-50 border border-slate-200 p-6 rounded-sm hover:border-cyan-500 transition-colors">
+                    <div class="w-12 h-12 bg-white border border-slate-300 text-cyan-600 font-mono font-bold text-sm flex items-center justify-center rounded-sm mb-4">
+                        ISO
+                    </div>
+                    <h3 class="text-sm font-bold text-slate-900 mb-2">ISO 22000 Food Safety</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Sistem manajemen keamanan pangan komoditas perikanan internasional.</p>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="bg-slate-50 border border-slate-200 p-6 rounded-sm hover:border-cyan-500 transition-colors">
+                    <div class="w-12 h-12 bg-white border border-slate-300 text-cyan-600 font-mono font-bold text-sm flex items-center justify-center rounded-sm mb-4">
+                        SKP
+                    </div>
+                    <h3 class="text-sm font-bold text-slate-900 mb-2">Sertifikat Kelayakan Pengolahan</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Akreditasi resmi kelayakan unit dari Kementerian Kelautan & Perikanan.</p>
+                </div>
+
+                <!-- Cert 4 -->
+                <div class="bg-slate-50 border border-slate-200 p-6 rounded-sm hover:border-cyan-500 transition-colors">
+                    <div class="w-12 h-12 bg-white border border-slate-300 text-cyan-600 font-mono font-bold text-sm flex items-center justify-center rounded-sm mb-4">
+                        HALAL
+                    </div>
+                    <h3 class="text-sm font-bold text-slate-900 mb-2">Sertifikasi Halal BPJPH</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Jaminan penanganan dan pemrosesan produk sesuai standar syariat.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 9. CONTACT & HUB LOCATION -->
+    <section id="kontak" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Direct Details -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs font-mono text-cyan-600 font-bold uppercase tracking-widest block">
+                        08 // Kontak & Lokasi Hub
+                    </span>
+
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 uppercase tracking-tight">
+                        Hubungi Kantor Pusat Operasional
+                    </h2>
+
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Silakan kirimkan pertanyaan atau permintaan kerjasama penawaran harga komoditas perikanan dan penanganan logistik ekspor impor kami.
+                    </p>
+
+                    <div class="space-y-4 pt-4 text-xs">
+                        <div class="flex items-start gap-4 p-4 bg-white border border-slate-200 rounded-sm">
+                            <i class="fa-solid fa-location-dot text-cyan-600 text-base mt-0.5"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-900 uppercase">Alamat Kantor Pusat</h4>
+                                <p class="text-slate-600 mt-1 leading-relaxed">
+                                    Cengkareng Timur, Kecamatan Cengkareng, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 bg-white border border-slate-200 rounded-sm">
+                            <i class="fa-solid fa-clock text-cyan-600 text-base mt-0.5"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-900 uppercase">Jam Layanan Operasional</h4>
+                                <p class="text-slate-600 mt-1">Senin s/d Jumat: 08.00 - 17.00 WIB</p>
+                                <p class="text-slate-600">Sabtu: 08.00 - 13.00 WIB</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 bg-white border border-slate-200 rounded-sm">
+                            <i class="fa-solid fa-envelope text-cyan-600 text-base mt-0.5"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-900 uppercase">Korespondensi Surat</h4>
+                                <p class="text-slate-600 mt-1 font-mono">info@karyamaritim.co.id</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7 bg-white border border-slate-300 p-8 rounded-sm shadow-sm">
+                    <h3 class="text-lg font-bold text-slate-900 uppercase tracking-wide mb-6">
+                        Formulir Komunikasi Bisnis
+                    </h3>
+
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Nama Lengkap *</label>
+                                <input type="text" required placeholder="Nama Anda" class="w-full bg-slate-50 border border-slate-300 p-2.5 text-xs rounded-sm focus:outline-none focus:border-cyan-600">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Perusahaan / Instansi *</label>
+                                <input type="text" required placeholder="Nama Perusahaan" class="w-full bg-slate-50 border border-slate-300 p-2.5 text-xs rounded-sm focus:outline-none focus:border-cyan-600">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Email Resmi *</label>
+                                <input type="email" required placeholder="email@perusahaan.com" class="w-full bg-slate-50 border border-slate-300 p-2.5 text-xs rounded-sm focus:outline-none focus:border-cyan-600">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Nomor Telepon / WA *</label>
+                                <input type="tel" required placeholder="0812xxxxxxxx" class="w-full bg-slate-50 border border-slate-300 p-2.5 text-xs rounded-sm focus:outline-none focus:border-cyan-600">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Subjek Permintaan *</label>
+                            <select class="w-full bg-slate-50 border border-slate-300 p-2.5 text-xs rounded-sm focus:outline-none focus:border-cyan-600">
+                                <option>Penawaran Produk Ikan Segar & Beku</option>
+                                <option>Pengurusan Administrasi Ekspor / Impor</option>
+                                <option>Kerjasama Logistik Rantai Dingin</option>
+                                <option>Informasi Kemitraan Lainnya</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Pesan Rincian Kebutuhan *</label>
+                            <textarea rows="4" required placeholder="Tuliskan spesifikasi volume, jenis ikan, atau rincian layanan yang Anda butuhkan..." class="w-full bg-slate-50 border border-slate-300 p-2.5 text-xs rounded-sm focus:outline-none focus:border-cyan-600"></textarea>
+                        </div>
+
+                        <!-- Notification Box (Replaces Alert) -->
+                        <div id="form-alert" class="hidden p-3 bg-emerald-100 border border-emerald-400 text-emerald-800 text-xs rounded-sm">
+                            <i class="fa-solid fa-circle-check mr-2"></i>
+                            Pesan Anda berhasil dikirimkan. Tim operasional kami akan segera menghubungi Anda.
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 bg-navy-900 hover:bg-cyan-600 text-white font-bold text-xs uppercase tracking-wider rounded-sm transition-colors shadow-md">
+                            Kirim Pesan Ke Operasional
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 10. PROFESSIONAL FOOTER -->
+    <footer class="bg-navy-900 text-white border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid md:grid-cols-12 gap-12 border-b border-slate-800 pb-12">
+                
+                <div class="md:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-cyan-500 flex items-center justify-center font-bold text-sm text-navy-950 rounded-sm">
+                            KM
+                        </div>
+                        <span class="font-bold tracking-tight text-base text-white">
+                            PT KARYA MARITIM
+                        </span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                        PT Karya Maritim dan PT Karya Maritim Dirgantara mengelola operasional terpadu di bidang logistik, administrasi ekspor impor, serta pengolahan dan perdagangan produk perikanan di Jakarta Barat.
+                    </p>
+                </div>
+
+                <div class="md:col-span-3 space-y-3">
+                    <h4 class="text-xs font-mono text-cyan-400 font-bold uppercase tracking-widest">Pintasan Navigasi</h4>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li><a href="#tentang" class="hover:text-white transition-colors">Profil Perusahaan</a></li>
+                        <li><a href="#layanan" class="hover:text-white transition-colors">Pilar Bisnis</a></li>
+                        <li><a href="#katalog" class="hover:text-white transition-colors">Katalog Produk Ikan</a></li>
+                        <li><a href="#alur" class="hover:text-white transition-colors">Alur Rantai Pasok</a></li>
+                        <li><a href="#kalkulator" class="hover:text-white transition-colors">Simulasi Biaya</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-4 space-y-3">
+                    <h4 class="text-xs font-mono text-cyan-400 font-bold uppercase tracking-widest">Pusat Wilayah</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Cengkareng Timur, Jakarta Barat, DKI Jakarta, Indonesia.
+                    </p>
+                    <div class="pt-2">
+                        <span class="inline-block text-[10px] font-mono bg-slate-800 border border-slate-700 text-slate-300 px-3 py-1 rounded-sm">
+                            INDONESIA SEAFOOD LOGISTICS
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 font-mono gap-4">
+                <div>
+                    &copy; 2026 PT Karya Maritim & PT Karya Maritim Dirgantara. All rights reserved.
+                </div>
+                <div class="flex gap-6">
+                    <span>HACCP Standardized</span>
+                    <span>Custom Clearance Ready</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT -->
+    <script>
+        // Mobile Navigation Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Catalog Filter Logic
+        function filterCatalog(category) {
+            const items = document.querySelectorAll('.catalog-item');
+            const buttons = document.querySelectorAll('.catalog-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-navy-900', 'text-white');
+                btn.classList.add('text-slate-600');
+            });
+
+            const activeBtn = document.getElementById(`btn-${category}`);
+            if(activeBtn) {
+                activeBtn.classList.add('bg-navy-900', 'text-white');
+                activeBtn.classList.remove('text-slate-600');
+            }
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        }
+
+        // Calculator Logic
+        let selectedTemp = 'frozen';
+
+        function setTemp(tempType) {
+            selectedTemp = tempType;
+            document.querySelectorAll('.temp-btn').forEach(btn => {
+                btn.classList.remove('bg-navy-900', 'text-white', 'border-navy-900');
+                btn.classList.add('bg-white', 'text-slate-700', 'border-slate-300');
+            });
+
+            const activeBtn = document.getElementById(`temp-${tempType}`);
+            if(activeBtn) {
+                activeBtn.classList.add('bg-navy-900', 'text-white', 'border-navy-900');
+                activeBtn.classList.remove('bg-white', 'text-slate-700', 'border-slate-300');
+            }
+
+            calculateEstimate();
+        }
+
+        function calculateEstimate() {
+            const service = document.getElementById('calc-service').value;
+            const scope = document.getElementById('calc-[#0F172A]').value;
+            const weight = parseInt(document.getElementById('calc-weight').value);
+            
+            document.getElementById('weight-display').innerText = `${weight.toLocaleString('id-ID')} KG`;
+
+            let baseRate = service === 'seafood' ? 12000 : 17000;
+            if (selectedTemp === 'frozen') baseRate += 3500;
+            if (selectedTemp === 'ultra') baseRate += 7000;
+            if (scope === 'ekspor') baseRate *= 2.2;
+
+            const total = Math.round((weight * baseRate) / 1000) * 1000;
+            
+            document.getElementById('estimate-result').innerText = new Intl.NumberFormat('id-ID', { 
+                style: 'currency', 
+                currency: 'IDR', 
+                maximumFractionDigits: 0 
+            }).format(total);
+        }
+
+        // Contact Form Submission (No alert popups)
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const alertBox = document.getElementById('form-alert');
+            alertBox.classList.remove('hidden');
+            document.getElementById('contact-form').reset();
+            
+            setTimeout(() => {
+                alertBox.classList.add('hidden');
+            }, 6000);
+        }
+    </script>
+</body>
+</html>
